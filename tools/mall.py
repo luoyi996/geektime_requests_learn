@@ -1,13 +1,9 @@
-import json
-
+import random
 from requests import Response
 import requests
 
 
 class Mall:
-    cookies = {'X-Litemall-Admin-Token': 'a9b41f77-890d-444e-872b-98b326321580'}
-    headers = {'X-Litemall-Admin-Token': 'a9b41f77-890d-444e-872b-98b326321580'}
-
     def login(self, username, password, code) -> Response:
         r = requests.post(
             url='https://litemall.hogwarts.ceshiren.com/admin/auth/login',
@@ -20,17 +16,26 @@ class Mall:
         )
         return r
 
+    def get_token(self):
+        """获取登录后的token值"""
+        user_token = self.login(username='admin123', password='admin123', code='').json()['data']['token']
+        cookies = {'X-Litemall-Admin-Token': user_token}
+        return cookies
+
     def logout(self) -> Response:
         r = requests.post(
             url='https://litemall.hogwarts.ceshiren.com/admin/auth/logout',
+            json={'token': f"{self.get_token().values()}"},
+            cookies=self.get_token(),
+            headers=self.get_token()
         )
         return r
 
     def user_addr(self) -> Response:
         r = requests.get(
             url='https://litemall.hogwarts.ceshiren.com/admin/address/list?page=1&limit=20&sort=add_time&order=desc',
-            cookies=self.cookies,
-            headers=self.headers,
+            cookies=self.get_token(),
+            headers=self.get_token(),
             verify=False
 
         )
@@ -39,8 +44,8 @@ class Mall:
     def first_page(self) -> Response:
         r = requests.get(
             url='https://litemall.hogwarts.ceshiren.com/admin/dashboard',
-            cookies=self.cookies,
-            headers=self.headers,
+            cookies=self.get_token(),
+            headers=self.get_token(),
             verify=False
         )
         return r
@@ -49,8 +54,8 @@ class Mall:
         r = requests.get(
             url='https://litemall.hogwarts.ceshiren.com/admin/order/list'
                 '?page=1&limit=20&sort=add_time&order=desc&start=&end=',
-            cookies=self.cookies,
-            headers=self.headers,
+            cookies=self.get_token(),
+            headers=self.get_token(),
             verify=False
         )
         return r
@@ -58,8 +63,8 @@ class Mall:
     def update_apple(self) -> Response:
         r = requests.post(
             url='https://litemall.hogwarts.ceshiren.com/admin/goods/update',
-            cookies=self.cookies,
-            headers=self.headers,
+            cookies=self.get_token(),
+            headers=self.get_token(),
             verify=False,
             json={
                 "goods": {
@@ -116,10 +121,13 @@ class Mall:
         return r
 
     def create_banana(self) -> Response:
+        commodity_id = "u" + str(random.randint(1, 100))
+        commodity_name = "香蕉" + str(random.randint(1, 100))
+
         r = requests.post(
             url='https://litemall.hogwarts.ceshiren.com/admin/goods/create',
-            cookies=self.cookies,
-            headers=self.headers,
+            cookies=self.get_token(),
+            headers=self.get_token(),
             verify=False,
             json={
                 "goods": {
@@ -128,8 +136,8 @@ class Mall:
                     "isHot": False,
                     "isNew": True,
                     "isOnSale": True,
-                    "goodsSn": "u003",
-                    "name": "香蕉02",
+                    "goodsSn": f"{commodity_id}",
+                    "name": f"{commodity_name}",
                     "categoryId": 1027001,
                     "brandId": 1001000,
                     "brief": "新鲜香蕉，产自广东",
@@ -163,3 +171,4 @@ class Mall:
             }
         )
         return r
+

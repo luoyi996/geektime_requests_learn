@@ -12,6 +12,7 @@ class TestMall:
         self.order_manage = mall.order_manage
         self.update_apple = mall.update_apple
         self.create_banana = mall.create_banana
+        self.logout = mall.logout
         print('setup_class method')
 
     def setup(self):
@@ -25,6 +26,11 @@ class TestMall:
         assert r.status_code == 200
         assert r.json()['errmsg'] == '成功'
         assert r.json()['data']['adminInfo']['nickName'] == 'admin123'
+
+    def test_logout(self):
+        r = self.logout()
+        assert r.status_code == 200
+        assert r.json()['errmsg'] == '成功'
 
     def test_user_addr(self):
         r = self.user_addr()
@@ -48,17 +54,23 @@ class TestMall:
         assert r.status_code == 200
         assert r.json()['errmsg'] == "成功"
 
-    def test_create_banana(self):
-        """测试未添加的商品"""
-        r = self.create_banana()
-        assert r.status_code == 200
-        assert r.json()['errmsg'] == "成功"
+    # def test_create_banana(self):
+    #     """测试未添加的商品"""
+    #     r = self.create_banana()
+    #     assert r.status_code == 200
+    #     assert r.json()['errmsg'] == "成功"
 
     def test_added_banana(self):
-        """测试已经添加的商品"""
+        """测试添加的商品"""
         r = self.create_banana()
-        assert r.status_code == 200
-        assert r.json()['errmsg'] == "商品名已经存在"
+        if r.json()['errmsg'] == "商品名已经存在":
+            # 判断已添加的商品
+            assert r.status_code == 200
+            assert r.json()['errmsg'] == "商品名已经存在"
+        else:
+            # 添加商品
+            assert r.status_code == 200
+            assert r.json()['errmsg'] == "成功"
 
     def teardown(self):
         print("teardown method")
