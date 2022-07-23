@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbed0df7-3298-4481-98cf-2452bd39a31d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../requests_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../requests_project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../requests_project/TestMallAPI/servers/test_mall.py" beforeDir="false" afterPath="$PROJECT_DIR$/../requests_project/TestMallAPI/servers/test_mall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../requests_project/tools/mall.py" beforeDir="false" afterPath="$PROJECT_DIR$/../requests_project/tools/mall.py" afterDir="false" />
-    </list>
+    <list default="true" id="dbed0df7-3298-4481-98cf-2452bd39a31d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../requests_project" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../requests_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -205,14 +201,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/requests_project_$pytest_for_test_mall_TestMall_test_first_page.coverage" NAME="pytest for test_mall.TestMall.test_first_page Coverage Results" MODIFIED="1658456463607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../requests_project/TestMallAPI/servers" />
-    <SUITE FILE_PATH="coverage/requests_project_$pytest_for_test_mall_TestMall_test_added_banana.coverage" NAME="pytest for test_mall.TestMall.test_added_banana Coverage Results" MODIFIED="1658457223132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../requests_project/TestMallAPI/servers" />
-    <SUITE FILE_PATH="coverage/requests_project_$mall.coverage" NAME="mall Coverage Results" MODIFIED="1658456394096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../requests_project/tools" />
-    <SUITE FILE_PATH="coverage/requests_project_$pytest_for_test_mall_TestMall.coverage" NAME="pytest for test_mall.TestMall Coverage Results" MODIFIED="1658457232482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../requests_project/TestMallAPI/servers" />
-    <SUITE FILE_PATH="coverage/requests_project_$pytest_for_test_mall_TestMall_test_user_addr.coverage" NAME="pytest for test_mall.TestMall.test_user_addr Coverage Results" MODIFIED="1658456455343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../requests_project/TestMallAPI/servers" />
-    <SUITE FILE_PATH="coverage/requests_project_$pytest_for_test_mall_TestMall_test_order_manage.coverage" NAME="pytest for test_mall.TestMall.test_order_manage Coverage Results" MODIFIED="1658456472975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../requests_project/TestMallAPI/servers" />
-    <SUITE FILE_PATH="coverage/requests_project_$pytest_for_test_mall_TestMall_test_login.coverage" NAME="pytest for test_mall.TestMall.test_login Coverage Results" MODIFIED="1658456447692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../requests_project/TestMallAPI/servers" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
