@@ -6,7 +6,7 @@ import os
 def log():
     logger = logging.getLogger('PetHospital')
     logger.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('%(asctime)s :: %(name)s：%(filename)s::%(funcName)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s：%(name)s::%(filename)s::%(funcName)s - %(message)s')
     # sh = logging.StreamHandler()
     # sh.setLevel(logging.DEBUG)
     # sh.setFormatter(formatter)

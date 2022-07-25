@@ -35,10 +35,10 @@ class OwnersMethod:
     def get_pet_master(self, list_id) -> (str, Response):
         """查找宠物的主人"""
         r = requests.get(
-            url=f'https://spring-petclinic-rest.k8s.hogwarts.ceshiren.com:443/petclinic/api/owners/{list_id}'
+            url=f'https://spring-petclinic-rest.k8s.hogwarts.ceshiren.com:443/petclinic/api/owners/{list_id}',
+            headers={"Content-Type": "application/json"}
         )
         if r.status_code == 200:
-
             if r.json()["pets"] is not []:
                 return r.json()["pets"][0]["name"]
             else:

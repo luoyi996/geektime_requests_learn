@@ -57,8 +57,6 @@ class TestOwnersAdd:
         """测试搜索宠物主人失败的case"""
         r = self.list.get_pet_master(list_id)
         code = r.status_code
-        print(r.json())
-        print(code)
         if code == 400:
             assert r.json()["error"] == "Bad Request"
             assert r.json()["status"] == 400
