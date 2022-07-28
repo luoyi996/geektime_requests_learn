@@ -12,7 +12,6 @@ class TestOwnersAdd:
         """
         self.add = OwnersMethod()
         self.add.clear('geek')
-        self.add.delete('')
 
     def setup(self):
         """加载每次都需要的数据"""

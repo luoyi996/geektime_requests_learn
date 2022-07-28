@@ -3,14 +3,17 @@ from typing import List
 from requests import Response
 from geektime_requests_learn.PetHospital.api.owner_data import Owner
 from geektime_requests_learn.PetHospital.framework.http_request import Request
+from geektime_requests_learn.PetHospital.utils.get_data import GetData
 from geektime_requests_learn.PetHospital.utils.log import log
 
 
 class OwnersMethod:
     def __init__(self):
         # 对request库的一次封装
+        self.yaml_data = GetData().load_yaml('data/env.yaml')
         self.request = Request()
-        self.host = 'https://spring-petclinic-rest.k8s.hogwarts.ceshiren.com:443'
+        # 获取默认测试环境
+        self.host = self.yaml_data[self.yaml_data["default"]]
 
     def search(self, lastName, key='lastName') -> List:
         self.request.method = 'get'

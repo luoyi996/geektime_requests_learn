@@ -6,3 +6,4 @@
 2022-07-28 13:13:01,968：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='11', id=None, lastName='geek', pets=None, telephone='1234567911')
 2022-07-28 13:13:02,141：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='1a', id=None, lastName='geek', pets=None, telephone='')
 2022-07-28 13:13:02,316：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='fffff', id=None, lastName='geek', pets=None, telephone='asdfqw')
+2022-07-28 17:16:22,563：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='', id=None, lastName='geek', pets=None, telephone='1234567911')
