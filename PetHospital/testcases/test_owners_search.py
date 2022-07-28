@@ -4,23 +4,19 @@ from geektime_requests_learn.PetHospital.api.owners import OwnersMethod
 from geektime_requests_learn.PetHospital.utils.log import log
 
 
-class TestOwnersAdd:
+class TestOwnersSearch:
     def setup_class(self):
         """__init__公共数据"""
         self.list = OwnersMethod()
-        ...
 
     def setup(self):
         """加载每次都需要的数据"""
-        ...
 
     def teardown(self):
         """清除每次setup加载的数据"""
-        ...
 
     def teardown_class(self):
         """清除数据"""
-        ...
 
     def test_search_value_isnone(self):
         """测试搜索结果为空的case"""
@@ -46,29 +42,16 @@ class TestOwnersAdd:
         log().debug(f'{self.test_search_multiple_values.__doc__} - 查询结果为：{r}')
         assert len(r) >= 2
 
-    @pytest.mark.parametrize('list_id', [1, 2, 3, 4, 10])
+    @pytest.mark.parametrize('list_id', [14, 15, 3, 4, 10])
     def test_search_pet_master_success(self, list_id):
         """测试搜索宠物主人成功的case"""
         r = self.list.get_pet_master(list_id)
         log().debug(f"{self.test_search_pet_master_success.__doc__} - 宠物'id={list_id}'的主人是：{r}")
 
-    @pytest.mark.parametrize('list_id', [None])
+    @pytest.mark.parametrize('list_id', [None, 1000, 'a', '', " "])
     def test_search_pet_master_fail(self, list_id):
         """测试搜索宠物主人失败的case"""
         r = self.list.get_pet_master(list_id)
-        code = r.status_code
-        if code == 400:
-            assert r.json()["error"] == "Bad Request"
-            assert r.json()["status"] == 400
-            log().debug(f"{self.test_search_pet_master_fail.__doc__} - Bad request，response code：{code}")
-        # elif code ==404:
-        #     assert r.json()["error"] == "Bad Request"
-        #     assert r.json()["status"] == 400
-        #     log().debug(f"{self.test_search_pet_master_fail.__doc__} - Owner not found，response code：{code}")
-        # elif code == 500:
-        #     assert r.json()["error"] == "Bad Request"
-        #     assert r.json()["status"] == 400
-        #     log().debug(f"{self.test_search_pet_master_fail.__doc__} - Server error，response code：{code}")
-        # else:
-        #     ...
+        assert r != 200
+
 

@@ -1,0 +1,8 @@
+2022-07-28 13:13:01,234：PetHospital::owners.py::delete -- INFO - 输出所有信息：{'className': 'org.springframework.web.HttpRequestMethodNotSupportedException', 'exMessage': "Request method 'DELETE' not supported"}
+2022-07-28 13:13:01,418：PetHospital::test_owners_add.py::test_add_success -- DEBUG - 测试添加成功的case-添加的宠物信息为：{'firstName': 'My', 'lastName': 'geek', 'address': 'NanShan', 'city': 'ShenZhen', 'telephone': '1234567911', 'id': 818, 'pets': []}
+2022-07-28 13:13:01,606：PetHospital::test_owners_add.py::test_add_success -- DEBUG - 测试添加成功的case-添加的宠物信息为：{'firstName': 'My', 'lastName': 'geek', 'address': 'NanShan', 'city': '1', 'telephone': '123456', 'id': 819, 'pets': []}
+2022-07-28 13:13:01,788：PetHospital::test_owners_add.py::test_add_success -- DEBUG - 测试添加成功的case-添加的宠物信息为：{'firstName': 'My', 'lastName': 'geek', 'address': 'NanShan', 'city': '11', 'telephone': '1234567911', 'id': 820, 'pets': []}
+2022-07-28 13:13:01,790：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='', id=None, lastName='geek', pets=None, telephone='1234567911')
+2022-07-28 13:13:01,968：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='11', id=None, lastName='geek', pets=None, telephone='1234567911')
+2022-07-28 13:13:02,141：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='1a', id=None, lastName='geek', pets=None, telephone='')
+2022-07-28 13:13:02,316：PetHospital::test_owners_add.py::test_add_fail -- DEBUG - 测试添加失败的case-测试数据为：Owner(address='NanShan', city='ShenZhen', firstName='fffff', id=None, lastName='geek', pets=None, telephone='asdfqw')

@@ -12,6 +12,7 @@ class TestOwnersAdd:
         """
         self.add = OwnersMethod()
         self.add.clear('geek')
+        self.add.delete('')
 
     def setup(self):
         """加载每次都需要的数据"""
@@ -35,8 +36,8 @@ class TestOwnersAdd:
         owner.lastName = 'geek'
         owner.firstName = 'My'
         owner.address = 'NanShan'
-        log().debug(f'{self.test_add_success.__doc__}-添加的宠物信息为：{owner}')
         r = self.add.add(owner)
+        log().debug(f'{self.test_add_success.__doc__}-添加的宠物信息为：{r.json()}')
         assert r.status_code == 201
 
     @pytest.mark.parametrize('owners', [
