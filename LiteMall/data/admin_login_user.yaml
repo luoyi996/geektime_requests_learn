@@ -1,0 +1,15 @@
+data_success: [
+  [ 'admin123', 'admin123', '' ],
+  [ 'mall123', 'mall123', '' ],
+  [ 'promotion123', 'promotion123', '' ]
+]
+
+
+data_fail: [
+  [ 'admin123','a123456', '' ],
+  [ 'admin123','admin123', '1' ],
+  [ 'admin','admin123', '' ],
+  [ 'admin','a123456', '1' ],
+  [ '','admin123', '' ],
+  [ 'admin123','', '' ]
+]

@@ -1,0 +1,107 @@
+2022-07-29 18:28:01,010：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:28:01,336：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:28:01,337：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': '6f32f844-bc1e-4810-b5f8-a1940d6ae6ec'}, 'errmsg': '成功'}
+2022-07-29 18:28:01,337：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:28:01,603：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:28:01,604：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:18:18', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:28:01,604：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:28:01,860：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:28:01,860：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:28:01,860：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:29:18,861：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:29:19,213：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:29:19,214：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': '01d80953-d599-4d5f-b361-d3af14bd898b'}, 'errmsg': '成功'}
+2022-07-29 18:29:19,214：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:29:19,450：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:29:19,451：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:18:18', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:29:19,451：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:29:19,696：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:29:19,696：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:29:19,697：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:31:34,101：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:31:34,440：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:31:34,441：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': '93c46327-9370-4401-9eaa-8d1620a0f69a'}, 'errmsg': '成功'}
+2022-07-29 18:31:34,441：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:31:34,684：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:31:34,685：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:18:18', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:31:34,685：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:31:34,919：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:31:34,919：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:31:34,920：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:33:12,179：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:33:12,536：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:33:12,536：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': 'b13ce5f8-a1c9-4146-822b-e62541e14dfb'}, 'errmsg': '成功'}
+2022-07-29 18:33:12,537：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:33:12,766：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:33:12,766：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:18:18', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:33:12,767：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:33:12,988：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:33:12,989：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:33:12,989：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:33:32,232：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:33:32,572：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:33:32,572：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': 'c6d32162-8613-4d71-af44-889b5b52c9c5'}, 'errmsg': '成功'}
+2022-07-29 18:33:32,573：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:33:32,804：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:33:32,805：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:18:18', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:33:32,805：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:33:33,055：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:33:33,055：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:33:33,056：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:43:58,416：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:43:58,783：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:43:58,784：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': 'e2e7a3a5-b71d-47c8-880b-9472aa403726'}, 'errmsg': '成功'}
+2022-07-29 18:43:58,784：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:43:59,046：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:43:59,046：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:42:54', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:43:59,047：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:43:59,293：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': None, 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:43:59,293：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:43:59,294：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:04,456：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:47:04,775：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:47:04,775：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': '18d79c09-1318-45f1-9007-21476b427d5f'}, 'errmsg': '成功'}
+2022-07-29 18:47:04,776：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:05,003：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': 'None', 'mobile': None, 'userId': 1, 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:05,004：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 0, 'pages': 0, 'limit': 20, 'page': 0, 'list': []}, 'errmsg': '成功'}
+2022-07-29 18:47:05,004：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:05,387：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': 'None', 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:05,388：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 0, 'pages': 0, 'limit': 20, 'page': 0, 'list': []}, 'errmsg': '成功'}
+2022-07-29 18:47:05,388：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:05,648：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': 'None', 'mobile': None, 'userId': 2, 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:05,648：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 0, 'pages': 0, 'limit': 20, 'page': 0, 'list': []}, 'errmsg': '成功'}
+2022-07-29 18:47:05,649：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:05,885：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': 'user123', 'mobile': None, 'userId': 'None', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:05,886：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:42:54', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:47:05,886：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:06,106：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': 'user123', 'mobile': None, 'userId': 'None', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:06,106：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:47:06,107：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:45,112：PetHospital::test_member_manage.py::setup_class -- INFO - setup_class 初始化数据
+2022-07-29 18:47:45,447：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{"username": "admin123", "password": "admin123", "code": ""}
+2022-07-29 18:47:45,447：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': 'fcb8e023-2e66-4399-bad0-6ffdd44699a9'}, 'errmsg': '成功'}
+2022-07-29 18:47:45,448：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:45,685：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': '', 'mobile': None, 'userId': 1, 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:45,685：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:42:54', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:47:45,686：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:45,928：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': '', 'mobile': None, 'userId': 1, 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:45,928：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:47:45,928：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:46,169：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': '', 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:46,169：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:42:54', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:47:46,169：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:46,405：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': '', 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:46,406：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:47:46,407：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:46,681：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': '', 'mobile': None, 'userId': 2, 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:46,681：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:42:54', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:47:46,681：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:46,923：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': '', 'mobile': None, 'userId': 2, 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:46,924：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:47:46,924：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:47,167：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': 'user123', 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:47,168：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': {'total': 1, 'pages': 1, 'limit': 20, 'page': 1, 'list': [{'id': 1, 'username': 'user123', 'password': '$2a$10$lTu9qi0hr19OC800Db.eludFr0AXuJUSrMHi/iPYhKRlPFeqJxlye', 'gender': 1, 'lastLoginTime': '2022-07-29 09:58:03', 'lastLoginIp': '172.17.56.110', 'userLevel': 0, 'nickname': 'user123', 'mobile': '13811100999', 'avatar': '', 'weixinOpenid': '', 'sessionKey': '', 'status': 0, 'addTime': '2019-04-20 14:17:43', 'updateTime': '2022-07-29 10:42:54', 'deleted': False}]}, 'errmsg': '成功'}
+2022-07-29 18:47:47,168：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200
+2022-07-29 18:47:47,652：PetHospital::http_request_protocol.py::send -- DEBUG - 请求数据：{'page': 1, 'limit': 20, 'username': 'user123', 'mobile': None, 'userId': '', 'sort': 'add_time', 'order': 'desc'}
+2022-07-29 18:47:47,653：PetHospital::http_request_protocol.py::send -- DEBUG - 响应数据：{'errno': 0, 'data': 0, 'errmsg': '成功'}
+2022-07-29 18:47:47,653：PetHospital::http_request_protocol.py::send -- DEBUG - 响应码：200

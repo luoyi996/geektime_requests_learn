@@ -25,11 +25,12 @@ class HTTPRequest:
         self.host = host[host["default"]]
         raw = None
         if self.data_type == 'json':
-            self.headers["Content-Type"] = "application/json"
+            self.headers.update({"Content-Type": "application/json"})
             if self.data is None:
                 raw = None
             else:
                 raw = json.dumps(self.data)
+
         send_request = requests.request(
             method=self.method,
             url=self.host + self.path,
@@ -39,7 +40,10 @@ class HTTPRequest:
             proxies=self.proxies,
             verify=self.verify
         )
-        log().debug(f"请求数据：{raw}")
+        if self.params is not None:
+            log().debug(f"请求数据：{self.params}")
+        else:
+            log().debug(f"请求数据：{raw}")
         r = HTTPResponse(send_request)
         log().debug(f"响应数据：{r.json()}")
         log().debug(f"响应码：{r.status_code}")
