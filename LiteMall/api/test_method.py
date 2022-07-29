@@ -65,4 +65,7 @@ class MallUserManage:
         r = self.user.send()
         return r
 
+    def mall_add_manage(self):
+        ...
+
 
