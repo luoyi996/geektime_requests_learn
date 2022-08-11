@@ -19,7 +19,6 @@ class TestLiteMallUserLogin:
         """
         param = LoginParams(**params)
         r = self.user.user_login(param)
-        assert r.status_code == 200
         assert r.json()['errno'] == 0
         assert r.json()['data']['userInfo']['nickName'] == param.username
         assert r.json()["errmsg"] == "成功"

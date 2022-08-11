@@ -15,15 +15,16 @@ class LiteMallSearch:
 
     def search(self, content: SearchParams) -> (List, Response):
         r = requests.get(
-            url='http://litemall.hogwarts.ceshiren.com/wx/goods/list',
+            # url='http://litemall.hogwarts.ceshiren.com/wx/goods/list',
+            url='https://litemall.hogwarts.ceshiren.com/wx/goods/list',
             headers={'X-Litemall-Token': self.token},
             json=asdict(content)
         )
-        log().debug(f"Requests data: {content}")
+        log().debug(f"{self.search.__name__} Method Msg: Search Value: {content}")
+        log().debug(f"{self.search.__name__} Method Msg: Response Result: {r.json()}")
         if r.status_code == 200:
             if r.json()['errno'] == 0:
-                log().debug(f"Response data: {r.json()}")
                 return r.json()['data']['list']
         else:
-            log().debug(f"Response data: {r.json()}")
-            return r.status_code
+            log().error(f"{self.search.__name__} Method Msg: Response Result: {r.status_code}")
+            return r

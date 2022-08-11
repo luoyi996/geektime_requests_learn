@@ -1,8 +1,0 @@
-2022-08-09 21:53:59,116：HomeWork::login.py::user_login -- DEBUG - Login info: username=test123,password=test123
-2022-08-09 21:53:59,116：HomeWork::login.py::user_login -- DEBUG - user_login::Response value: {'errno': 0, 'data': {'userInfo': {'nickName': 'test123', 'avatarUrl': 'https://yanxuan.nosdn.127.net/80841d741d7fa3073e0ae27bf487339f.jpg?imageView&quality=90&thumbnail=64x64'}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNjYwMDYwNDMzLCJ1c2VySWQiOjIyLCJpYXQiOjE2NjAwNTMyMzN9.l0qRuPg_MzcFYpVVhLrzlrL094mOvHsXfVdRG7It3zE'}, 'errmsg': '成功'}
-2022-08-09 21:53:59,423：HomeWork::login.py::user_login -- DEBUG - Login info: username=test001,password=test001
-2022-08-09 21:53:59,424：HomeWork::login.py::user_login -- DEBUG - user_login::Response value: {'errno': 700, 'errmsg': '账号不存在'}
-2022-08-09 21:55:43,560：HomeWork::login.py::user_login -- DEBUG - Login info: username=test123,password=test123
-2022-08-09 21:55:43,561：HomeWork::login.py::user_login -- DEBUG - user_login::Response value: {'errno': 0, 'data': {'userInfo': {'nickName': 'test123', 'avatarUrl': 'https://yanxuan.nosdn.127.net/80841d741d7fa3073e0ae27bf487339f.jpg?imageView&quality=90&thumbnail=64x64'}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNjYwMDYwNTM3LCJ1c2VySWQiOjIyLCJpYXQiOjE2NjAwNTMzMzd9.RecsXnkOvr5Cnc6sMmofi0dP_peDds0k2u2EWk0KOyM'}, 'errmsg': '成功'}
-2022-08-09 21:55:43,874：HomeWork::login.py::user_login -- DEBUG - Login info: username=test001,password=test001
-2022-08-09 21:55:43,874：HomeWork::login.py::user_login -- DEBUG - user_login::Response value: {'errno': 700, 'errmsg': '账号不存在'}
