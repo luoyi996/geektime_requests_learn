@@ -56,9 +56,9 @@ class AddShoppingCart:
             return r
 
     def clear_shopping_cart(self):
-        cart_count = [i['productId'] for i in self.get_shopping_cart_list()]
+        cart_count = [i['id'] for i in self.get_shopping_cart_list()]
         if len(cart_count) == 0:
-            log().info(f"{self.clear_shopping_cart.__name__}: Shopping cart is not product")
+            log().info(f"{self.clear_shopping_cart.__name__}: There are no items in the shopping cart")
         else:
             self.delete_shopping_cart(cart_count)
             log().info(f"{self.clear_shopping_cart.__name__}: Shopping cart list = "

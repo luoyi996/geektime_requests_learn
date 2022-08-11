@@ -8,6 +8,7 @@ from geektime_requests_learn.homework.utils.log import log
 class TestAddShoppingCart:
     def setup_class(self):
         self.user = AddShoppingCart()
+        self.user.clear_shopping_cart()
 
     def teardown_class(self):
         self.user.clear_shopping_cart()
@@ -30,8 +31,8 @@ class TestAddShoppingCart:
                [(i['goodsId'], i['productId']) for i in self.user.get_shopping_cart_list()]
 
     @pytest.mark.parametrize('add_product', [
-        {'goodsId': 1130037, 'number': 1, 'productId': 36},
-        {'goodsId': 1023034, 'number': 1, 'productId': 189},
+        {'goodsId': 1130037, 'number': 1, 'productId': 140},
+        {'goodsId': 1023034, 'number': 1, 'productId': 68},
     ])
     def test_add_shopping_cart_fail(self, add_product):
         """
@@ -93,20 +94,15 @@ class TestAddShoppingCart:
         assert r.json()['errno'] == 401
         assert r.json()['errmsg'] == '参数不对'
 
-    def test_get_shopping_list(self):
-        print(self.user.get_shopping_cart_list())
-
-    @pytest.mark.parametrize('product_id', [71, [68, 140]])
+    @pytest.mark.parametrize('product_id', [
+        [36],
+        [189, 140, 68]
+    ])
     def test_delete_shopping(self, product_id):
-        cart_count = len([i['productId'] for i in self.user.get_shopping_cart_list()])
+        product_count = [i['id'] for i in self.user.get_shopping_cart_list()]
         r = self.user.delete_shopping_cart(product_id)
+        surplus_count = [i['id'] for i in self.user.get_shopping_cart_list()]
         assert r.json()["errno"] == 0
         assert r.json()["errmsg"] == '成功'
-        count = r.json()['data']['cartTotal']['goodsCount']
-        if cart_count == 0:
-            log().info(f"{self.test_delete_shopping.__name__}: Shopping cart is not product")
-        else:
-            if isinstance(product_id, list):
-                assert count == cart_count - len(product_id)
-            else:
-                assert count == cart_count - 1
+        assert len(product_count) == len(surplus_count) + len(product_id)
+
