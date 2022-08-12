@@ -2,7 +2,6 @@ import pytest
 
 from geektime_requests_learn.homework.api.add_shopping_cart import AddShoppingCart
 from geektime_requests_learn.homework.model.data_stream.add_shopping_cart_params import AddShoppingCartParams
-from geektime_requests_learn.homework.utils.log import log
 
 
 class TestAddShoppingCart:
@@ -98,7 +97,12 @@ class TestAddShoppingCart:
         [36],
         [189, 140, 68]
     ])
-    def test_delete_shopping(self, product_id):
+    def test_delete_shopping_success(self, product_id):
+        """
+        成功删除购物车商品校验
+        :param product_id:
+        :return:
+        """
         product_count = [i['id'] for i in self.user.get_shopping_cart_list()]
         r = self.user.delete_shopping_cart(product_id)
         surplus_count = [i['id'] for i in self.user.get_shopping_cart_list()]
@@ -106,3 +110,49 @@ class TestAddShoppingCart:
         assert r.json()["errmsg"] == '成功'
         assert len(product_count) == len(surplus_count) + len(product_id)
 
+    @pytest.mark.parametrize('product_id', [
+        [1],
+        [12, 2, 4],
+        [''],
+        [' ']
+    ])
+    def test_delete_shopping_fail(self, product_id):
+        """
+        删除购物车商品失败的校验
+        :param product_id:
+        :return:
+        """
+        product_count = [i['id'] for i in self.user.get_shopping_cart_list()]
+        r = self.user.delete_shopping_cart(product_id)
+        surplus_count = [i['id'] for i in self.user.get_shopping_cart_list()]
+        assert r.json()["errno"] == 0
+        assert r.json()["errmsg"] == '成功'
+        assert len(product_count) == len(surplus_count)
+
+    # @pytest.mark.parametrize('product_id', [
+    #
+    # ])
+    # def test_delete_shopping_error401(self, product_id):
+    #     """
+    #     参数错误校验
+    #     :param product_id:
+    #     :return:
+    #     """
+    #     r = self.user.delete_shopping_cart(product_id)
+    #     print(r.json())
+    #     assert r.json()["errno"] == 401
+    #     assert r.json()["errmsg"] == '参数不对'
+
+    @pytest.mark.parametrize('product_id', [
+        ['a'], ['中文'], ['%$#@^']
+    ])
+    def test_delete_shopping_error402(self, product_id):
+        """
+        参数值错误校验
+        :param product_id:
+        :return:
+        """
+        r = self.user.delete_shopping_cart(product_id)
+        print(r.json())
+        assert r.json()["errno"] == 402
+        assert r.json()["errmsg"] == '参数值不对'
